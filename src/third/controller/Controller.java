@@ -40,10 +40,13 @@ public class Controller
 		
 		int count = 0;
 		//Step 2: Test the variable
-		while(isFinished)
+		while(!isFinished)
 		{
 			//Set 3: Do things!
 			System.out.println("Words on the screen" + count);
+			
+			view.displayMessage(count + "");
+			
 			count++;
 			
 			if (count > 130)
