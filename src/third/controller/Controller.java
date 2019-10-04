@@ -36,11 +36,13 @@ public class Controller
 		//Step 1: Define a variable
 		boolean isFinished = false;
 		
+		view.displayMessage("Let's have some loops!");
+		
 		int count = 0;
 		//Step 2: Test the variable
 		while(isFinished)
 		{
-			//Set 3: Do things
+			//Set 3: Do things!
 			System.out.println("Words on the screen" + count);
 			count++;
 			
