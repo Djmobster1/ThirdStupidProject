@@ -45,8 +45,9 @@ public class Controller
 			//Set 3: Do things!
 			System.out.println("Words on the screen" + count);
 			
-			view.displayMessage(count + "");
-			
+			//view.displayMessage(count + "");
+			String response = view.askQuestion("Hi there what is going on?");
+			view.displayMessage("You said: " + response);
 			count++;
 			
 			if (count > 130)
