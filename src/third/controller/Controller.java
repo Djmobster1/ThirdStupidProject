@@ -1,9 +1,22 @@
 package third.controller;
 
 
+//Need to import popup since its in a different package
+import third.view.Popup;
+
+
 public class Controller
 {
 
+	private Popup view;
+	
+	public Controller()
+	{
+		view = new Popup();
+	}
+	
+	
+	
 	public void start()
 	{
 		
