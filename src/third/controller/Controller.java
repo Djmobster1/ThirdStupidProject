@@ -88,6 +88,14 @@ public class Controller
 			userInput.add(input);
 			input = view.askQuestion("Keep typing or type done");
 		}
+		
+		view.displayMessage("There are " + userInput.size() + "input staements in the list");
+		
+		for (int index = 0; index < userInput.size(); index = 1)
+		{
+			view.displayMessage("Index: " + index + " is storing: " + userInput.get(index));
+		}
+	
 	}
 
 }
