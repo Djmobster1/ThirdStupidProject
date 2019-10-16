@@ -91,11 +91,21 @@ public class Controller
 		
 		view.displayMessage("There are " + userInput.size() + "input staements in the list");
 		
-		for (int index = 0; index < userInput.size(); index = 1)
+		for (int index = 0; index < userInput.size(); index += 1)
 		{
 			view.displayMessage("Index: " + index + " is storing: " + userInput.get(index));
 		}
+		
+		view.displayMessage("Lets destroy the list!!!");
+		
+		for (int index = userInput.size() - 1; index >= 0; index--)
+		{
+			String contents = userInput.remove(index);
+			view.displayMessage("You just removed: " + contents);
+		}
 	
+	
+		view.displayMessage("The list is now this big: " + userInput.size());
 	}
 
 }
